@@ -105,3 +105,14 @@ border: none;
 background-color: white;
 
 `
+export const DetailWrapper = styled.span`
+width: 55%;
+`
+
+export const ExpiryWrapper = styled.span`
+width: 30%;
+`
+
+export const CVVWrapper = styled.span`
+width:25%
+`

@@ -12,9 +12,9 @@ import { ProfileWrapper,
          NextWrapper,
          CancelWrapper,
          StateWrapper,
-        ProfileForm, 
-        LocalWrapper,
-        Asterisk} 
+         ProfileForm, 
+         LocalWrapper,
+         Asterisk} 
   from './profile.style'
 
 export default function Profile() {
