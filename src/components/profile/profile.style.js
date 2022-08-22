@@ -57,6 +57,14 @@ export const ProfileInfoWrapper = styled.div`
     border-bottom: 2px solid;
     
 `
+export const CardFormWrapper = styled.span`
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    
+    
+`
+
 
 export const ProfileFormWrapper = styled.div`
     display: flex;
@@ -106,13 +114,77 @@ background-color: white;
 
 `
 export const DetailWrapper = styled.span`
-width: 55%;
+width: 60% ;
 `
 
 export const ExpiryWrapper = styled.span`
-width: 30%;
+width: 20%;
 `
 
 export const CVVWrapper = styled.span`
-width:25%
+width: 10%;
+`
+
+export const BoxWrapper = styled.div`
+background: #FFFFFF;
+box-shadow: 0px 10px 15px rgba(33, 30, 67, 0.08);
+border-radius: 10px;
+width: 756px;
+height: 405px;
+margin-top: 40px;
+`
+export const BoxHeader = styled.div`
+background: #2F80ED;
+border-radius: 16px 10px 0px 0px;
+width: 756px;
+height: 70px;
+
+
+`
+export const TextHeader = styled.span`
+font-family: 'Product Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+color: #FFFFFF;
+
+`
+export const TextA = styled.span`
+font-family: 'Product Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+color: #4E598C;
+`
+export const TextB = styled.span`
+font-family: 'Product Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+color: #4E598C;
+`
+
+export const TextC = styled.span`
+font-family: 'Product Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+color: #4E598C;
+
+`
+export const TextD = styled.span`
+font-family: 'Product Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+color: #000000;
+`
+export const TextWrapper = styled.div``
+export const TextWrap = styled.div`
+border-bottom: 2px solid;
 `

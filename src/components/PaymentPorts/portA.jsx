@@ -6,7 +6,7 @@ import { Wrapper,
         ProfileHeader,
         ProfileWrapper, 
         ProfileInfoWrapper,
-        ProfileFormWrapper,
+        CardFormWrapper,
         ProfileForm,
         Asterisk,
         DetailWrapper,
@@ -30,7 +30,7 @@ export default function portA() {
            <ProfileInfo>Billing Info</ProfileInfo>
            <ProfileInfo>Confirm Payment</ProfileInfo>
         </ProfileInfoWrapper>
-        </ProfileWrapper>
+        
         <ProfileForm className="profile-form">
           <LabelComponent label="Name on Card" />
           <Asterisk>*</Asterisk> 
@@ -40,7 +40,7 @@ export default function portA() {
           <Input placeholder='Visa' />
         </ProfileForm>
 
-        <ProfileFormWrapper className="profile-form-wrapper">
+        <CardFormWrapper className="profile-form-wrapper">
           <DetailWrapper>
           <LabelComponent label="Card details" /> 
           <Asterisk>*</Asterisk>
@@ -56,14 +56,14 @@ export default function portA() {
             <Asterisk>*</Asterisk>
           <Input placeholder='923' type='select' />
           </CVVWrapper>
-        </ProfileFormWrapper>
+        </CardFormWrapper>
 
         <ButtonWrapper className="button-wrapper">
           <NextWrapper>Next</NextWrapper>
           <CancelWrapper>Cancel Payment</CancelWrapper>
         </ButtonWrapper>
 
-
+        </ProfileWrapper>
 
     </Wrapper>
   )
