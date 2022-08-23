@@ -1,14 +1,21 @@
-import {InputContainer, Input} from './Input.style'
-
+import { InputContainer, Input } from "./Input.style";
 
 export const InputComponent = ({
-    placeholder = "",
-    type = "text",
-    width
+  placeholder = "",
+  value = "",
+  type = "text",
+  width,
+  handleInputChange,
 }) => {
-    return <InputContainer>
-    <Input placeholder={placeholder} type={type} width={width} />
-    
+  return (
+    <InputContainer>
+      <Input
+        placeholder={placeholder}
+        type={type}
+        width={width}
+        value={value}
+        onChange={handleInputChange}
+      />
     </InputContainer>
-
-}
+  );
+};
