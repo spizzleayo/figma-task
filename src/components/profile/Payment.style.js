@@ -28,7 +28,7 @@ export const PageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 150vh;
 `;
 
 export const Asterisk = styled.span`
@@ -147,6 +147,7 @@ export const CancelButton = styled.button`
   margin-right: 100px;
   text-align: center;
   border: none;
+  margin: auto;
   text-decoration: none;
   color: linear-gradient(180deg #4e598c 0%, #4e598c 100%);
   border: none;
@@ -193,7 +194,7 @@ export const BoxHeader = styled.div`
   background: #2f80ed;
   border-radius: 16px 10px 0px 0px;
   width: 100%;
-  height: 70px;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
 `;
@@ -206,8 +207,7 @@ export const Item = styled.span`
   width: 100px;
   height: 30px;
   color: #ffffff;
-  margin-top: 20px;
-  margin-left: 80.2px;
+  margin: auto;
 `;
 export const Price = styled.span`
   font-family: "PT Sans";
@@ -216,8 +216,7 @@ export const Price = styled.span`
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
-  margin-top: 20px;
-  margin-right: 130.52px;
+  margin: auto;
 `;
 
 export const TextA = styled.span`
@@ -227,8 +226,7 @@ export const TextA = styled.span`
   font-size: 20px;
   line-height: 30px;
   color: #4e598c;
-  margin-left: 80.2px;
-  margin-top: 62px;
+  margin-left: 40px;
 `;
 export const TextB = styled.span`
   font-family: "PT Sans";
@@ -237,8 +235,7 @@ export const TextB = styled.span`
   font-size: 20px;
   line-height: 30px;
   color: #4e598c;
-  margin-right: 131px;
-  margin-top: 57px;
+  margin-right: 35px;
 `;
 
 export const TextC = styled.span`
@@ -248,9 +245,7 @@ export const TextC = styled.span`
   font-size: 20px;
   line-height: 30px;
   color: #4e598c;
-  margin-left: 80.2px;
-  margin-bottom: 37px;
-  margin-top: 40px;
+  margin-left: 40px;
 `;
 export const TextD = styled.span`
   font-family: "PT Sans";
@@ -259,40 +254,39 @@ export const TextD = styled.span`
   font-size: 20px;
   line-height: 30px;
   color: #000000;
-  margin-right: 131px;
-  margin-bottom: 37px;
-  margin-top: 43px;
+  margin-right: 35px;
 `;
 export const TextWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
 `;
 export const TextWrap = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
 `;
 export const Border = styled.div`
   border-bottom: 2px solid;
-  margin-left: 42.07px;
-  margin-right: 26.3px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 30px;
 `;
 export const TotalBorder = styled.div`
   margin-top: 39px;
   margin-bottom: 41px;
-  margin-left: 61.79px;
+  margin-left: 20px;
   background: #ffffff;
   border: 1px solid #817e9e;
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
-  margin-right: 80.2px;
+  margin-right: 20px;
   height: 58px;
 `;
 export const Total = styled.div`
-  margin-left: 19.72px;
-  padding-right: 80.2px;
+  margin-left: 21px;
   margin-top: 14px;
-  margin-bottom: 14px;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -301,7 +295,7 @@ export const Total = styled.div`
   color: #817e9e;
 `;
 export const Value = styled.div`
-  margin-right: 30.24px;
+  margin-right: 15px;
 
   height: 30px;
   font-family: "PT Sans";
@@ -318,19 +312,9 @@ export const PurchasedContainer = styled.div`
   background: #ffffff;
   box-shadow: 0px 6px 10px rgba(33, 30, 67, 0.08);
   border-radius: 10px;
-  width: 100%;
-  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-
-  @media screen and (max-width: 765px) {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    text-align: center;
-  }
 `;
 
 export const CheckBox = styled.div`
@@ -346,8 +330,13 @@ export const CheckBox = styled.div`
 `;
 
 export const Check = styled.div`
-  margin: 80px;
-  padding: 10px;
+  @media screen and (min-width: 760px) {
+    margin: 0px;
+    padding: 16px;
+  }
+  @media screen and (min-width: 320px) {
+    margin: 70px;
+  }
 `;
 
 export const Icon = styled(FaCheck)`
@@ -394,6 +383,10 @@ export const ReturnButton = styled.button`
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+
+  @media screen and (min-width: 320px) {
+    margin-top: 115px;
+  }
 `;
 
 export const ActiveTabIndicator = styled.div`

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import LabelComponent from "../label/Label";
-//import { Link } from "react-router-dom"
 import Input from "../input";
 import {
   ProfileWrapper,
